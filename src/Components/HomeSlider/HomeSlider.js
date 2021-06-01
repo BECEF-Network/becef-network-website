@@ -16,7 +16,7 @@ const HomeSlider = (props) => {
     return (
         <Carousel {...settings}>
             <Wrap>
-        <a>
+        <a href="/#">
           <IMG src="/images/slider-badag.jpg" alt="" />
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -30,7 +30,7 @@ const HomeSlider = (props) => {
         </a>
       </Wrap>
       <Wrap>
-        <a>
+        <a href="/#">
           <IMG src="/images/slider-badging.jpg" alt="" />
           <h2>
              Quos
@@ -45,7 +45,7 @@ const HomeSlider = (props) => {
         </a>
       </Wrap>
       <Wrap>
-        <a>
+        <a href="/#">
           <IMG src="/images/slider-scale.jpg" alt="" />
           <h2>
            Nam unde eaque, id dolorem ullam ab sunt.
@@ -59,7 +59,7 @@ const HomeSlider = (props) => {
         </a>
       </Wrap>
       <Wrap>
-        <a>
+        <a href="/#">
           <IMG src="/images/slider-scales.jpg" alt="" />
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos

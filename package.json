@@ -15,6 +15,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "onandroid": "node ./node_modules/react-scripts/bin/react-scripts.js start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
