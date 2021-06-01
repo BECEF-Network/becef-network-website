@@ -1,0 +1,15 @@
+.container{
+    position:relative;
+    min-height:calc(100vh - 250px);
+    overflow-x: hidden;
+    display: block;
+    top:22px;
+    padding: 0 calc(3.5vw - 5px);
+    background: black;
+    width: 100%;
+    height:60vh;
+}
+.home{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
