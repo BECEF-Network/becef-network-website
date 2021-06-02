@@ -47,7 +47,7 @@ function Header() {
                     </div>
 
                     {/* mobile logo start */}
-                    <img src="image/logo-1.png" className="mbl-logo" alt="" />
+                    <img src="images/logo-1.png" className="mbl-logo" alt="LOGO" />
                     {/* mobile logo end */}
 
                     <div className="nav-top-login">
@@ -57,7 +57,7 @@ function Header() {
                 </div>
                 
                 <div className="nav-middle">
-                    <img src="image/logo-1.png" className="logo" alt="" />
+                    <img src="images/logo-1.png" className="logo" alt="LOGO" />
                 </div>
                 
                 <div className="nav-bottom">

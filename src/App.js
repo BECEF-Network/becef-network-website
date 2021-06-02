@@ -14,8 +14,8 @@ export default function App() {
   return (
     <>
       <Header />
-      <Homepage />
       <Slider2/>
+      <Homepage />
       <Footer/>
     </>
   );
