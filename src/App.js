@@ -15,7 +15,7 @@ export default function App() {
     <>
       <Header />
       <Slider2/>
-    {/* <Homepage />  */}
+      {/* <Homepage /> */}
       <Footer/>
     </>
   );

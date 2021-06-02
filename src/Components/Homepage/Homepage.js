@@ -6,7 +6,7 @@ const Homepage = () => {
     return (
         <div className="home">
             <div className="container">
-                <HomeSlider />
+                {/* <HomeSlider /> */}
             </div>
         </div>
     )
