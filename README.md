@@ -4,8 +4,9 @@
 
 # To see Header, Footer and Slider
 
-### istall first node modules...
-$ npm install
+> ### istall first node modules...
+
+     $ npm install
 
 install bootstrap package...
 $ npm install bootstrap
