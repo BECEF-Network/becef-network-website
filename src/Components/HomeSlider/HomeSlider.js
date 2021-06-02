@@ -18,7 +18,7 @@ const HomeSlider = (props) => {
       <Wrap>
         <a href="/#">
           <IMG src="/images/slider-badag.jpg" alt="" />
-          <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+          <h2>Lorem ipsum dolor sit, .</h2>
           <h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, in
             atque! Reprehenderit optio vel iure modi, maxime eveniet hic aliquid
@@ -31,7 +31,7 @@ const HomeSlider = (props) => {
         <a href="/#">
           <IMG src="/images/slider-badging.jpg" alt="" />
           <h2>
-            Quos aperiam rerum cum! Nam unde eaque, id dolorem ullam ab sunt.
+            Quos aperiam rerum cum! 
           </h2>
           <h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, in
@@ -44,7 +44,7 @@ const HomeSlider = (props) => {
       <Wrap>
         <a href="/#">
           <IMG src="/images/slider-scale.jpg" alt="" />
-          <h2>Nam unde eaque, id dolorem ullam ab sunt.</h2>
+          <h2>Nam unde eaque, id .</h2>
           <h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, in
             atque! Reprehenderit optio vel iure modi, maxime eveniet hic aliquid
@@ -57,7 +57,7 @@ const HomeSlider = (props) => {
         <a href="/#">
           <IMG src="/images/slider-scales.jpg" alt="" />
           <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+            Lorem ipsum dolor sit,
           </h2>
           <h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, in
@@ -71,13 +71,14 @@ const HomeSlider = (props) => {
   );
 };
 const IMG = styled.img`
-  widht: 100%;
-  height: 100%;
+  widht: 180px;
+  height: 360px;
   object-fit: content;
 `;
 const Carousel = styled(Slider)`
   margin-top: 20px;
   color: white;
+  position: relative;
   & > button {
     opacity: 0.5;
     height: 100%;
@@ -102,21 +103,22 @@ const Carousel = styled(Slider)`
     // overflow: initial;
   }
   .slick-prev {
-    left: -75px;
+    left: -10px;
   }
   .slick-next {
-    right: -75px;
+    right: -10px;
   }
 `;
 
 const Wrap = styled.div`
-  margin-right: 10rem;
+  margin-right: 20rem;
   display: flex;
   h2 {
     position: absolute;
     padding: 10px;
     top: 8rem;
     text-align: center;
+    width: 10%;
   }
   h5 {
     position: fixed;

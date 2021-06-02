@@ -5,12 +5,14 @@
     display: block;
     top:22px;
     padding: 0 calc(3.5vw - 5px);
-    background: black;
-    width: 100%;
-    height:60vh;
+    width: 70%;
+    height:35vh;
+    right: 17rem;
+    top: 4rem;
 }
 .home{
     margin-left: 10rem;
     margin-right: 10rem;
     margin-bottom: 5rem;
+    display: flex;
 }
