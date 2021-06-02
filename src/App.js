@@ -7,6 +7,8 @@ import Footer from './Components/Footer/Footer'
 // bootstrap link 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Slider from "react-slick";
+// import Navbar from "./Components/Navbar/Navbar";
+import Contact from './Components/Contact/Contact'
 
 export default function App() {
   return (
