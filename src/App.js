@@ -1,12 +1,20 @@
 import "./App.css";
 import Homepage from "./Components/Homepage/Homepage";
-import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
+import Slider2 from "./Components/Slider2/Slider2";
+import Footer from './Components/Footer/Footer'
+
+// bootstrap link 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Slider from "react-slick";
 
 export default function App() {
   return (
     <>
-      <Navbar />
-      <Homepage/>
+      <Header />
+      <Homepage />
+      <Slider2/>
+      <Footer/>
     </>
   );
 }
