@@ -1,25 +1,11 @@
+
 ## Official Website
 
 
-**To see header,footer and slider2**
+# To see Header, Footer and Slider
 
-istall first node modules...
-$ npm install
+> **Istall first node modules**
 
-install bootstrap package...
-$ npm install bootstrap
+     npm install
 
-intall swiper js 
-$ npm i swiper
 
-install fotawsome 
-$ npm i --save @fortawesome/fontawesome-svg-core
-  npm install --save @fortawesome/free-solid-svg-icons
-  npm install --save @fortawesome/react-fontawesome
-  
-  then again 
-  
-  $ npm install --save @fortawesome/free-brands-svg-icons
-    npm install --save @fortawesome/free-regular-svg-icons
-    
-    
