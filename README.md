@@ -1,7 +1,7 @@
 ## Official Website
 
 
-#To see header,footer and slider2#
+##To see header,footer and slider2##
 
 istall first node modules...
 $ npm install
