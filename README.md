@@ -1,4 +1,4 @@
-![default](https://user-images.githubusercontent.com/74038129/120436910-56e60c00-c3a1-11eb-84a6-a53634694a21.png)
+
 ## Official Website
 
 
@@ -20,8 +20,7 @@ $ npm i --save @fortawesome/fontawesome-svg-core
   
   then again 
   
-  $ npm install --save @fortawesome/free-brands-svg-icons
+    $ npm install --save @fortawesome/free-brands-svg-icons
     npm install --save @fortawesome/free-regular-svg-icons
-    
-    ![default]($ npm i swiper)
+  
 
