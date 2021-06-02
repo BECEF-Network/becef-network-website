@@ -4,14 +4,15 @@
 
 # To see Header, Footer and Slider
 
-> ### istall first node modules...
+> ### istall first node modules
 
      $ npm install
 
-install bootstrap package...
-$ npm install bootstrap
+install bootstrap package
 
-intall swiper js 
+     $ npm install bootstrap
+
+> **Intall swiper js** 
 
      $ npm i swiper
 
