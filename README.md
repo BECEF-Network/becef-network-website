@@ -2,9 +2,9 @@
 ## Official Website
 
 
-# To see header,footer and slider2
+# To see Header, Footer and Slider
 
-istall first node modules...
+### istall first node modules...
 $ npm install
 
 install bootstrap package...
