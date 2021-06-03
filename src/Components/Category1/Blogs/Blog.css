@@ -1,0 +1,26 @@
+.siam-category1-blogs-main{
+    display:flex;
+    position: relative;
+    top: 4rem;
+    margin-bottom: 2rem;
+}
+.siam-category1-blog-img{
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    right: 27rem;
+}
+.siam-category1-title-tag{
+    position: relative;
+    right: 26rem;
+    font-size: 12px;
+    top: -0.5rem;
+}
+.siam-category1-title-desc{
+    position: relative;
+    right: 26rem;
+    font-size: 13px;
+    width: 280px;
+    top: -1rem;
+    font-weight: 500;
+}

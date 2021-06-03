@@ -1,6 +1,18 @@
-.title{
+.siam-category1{
+    width: 120px;
+}
+.siam-category1-title{
     font-size: 34px;
     position: relative;
     top: 3rem;
-    right: 15rem;
+    right: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siam-category1-icon{
+    height: 3.5vh;
+}
+.siam-category1-h2{
+    padding: 1px;
 }
