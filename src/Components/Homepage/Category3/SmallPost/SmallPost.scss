@@ -1,0 +1,31 @@
+.small-post{
+
+    .category1{
+        h4.mb-4 {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+    
+    .post{
+        margin-top: 10px;
+
+        .post-thum{
+            width: 100%;
+            height: 100%;
+            background:black;
+            border-radius: 5px;
+        }
+
+        .post-content{
+            margin-top: 19px;
+
+            h5{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}

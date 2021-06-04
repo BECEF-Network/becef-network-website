@@ -1,0 +1,24 @@
+.big-post {
+  background-size: cover !important;
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.big-post .post-container h4 {
+  color: white;
+  padding-right: 10rem;
+  margin-bottom: 5px;
+}
+
+.big-post .post-container p {
+  color: white;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=BigPost.css.map */

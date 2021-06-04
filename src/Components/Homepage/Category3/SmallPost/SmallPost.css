@@ -1,0 +1,28 @@
+.small-post .category1 h4.mb-4 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.small-post .post {
+  margin-top: 10px;
+}
+
+.small-post .post .post-thum {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 5px;
+}
+
+.small-post .post .post-content {
+  margin-top: 19px;
+}
+
+.small-post .post .post-content h5 {
+  margin: 0;
+}
+
+.small-post .post .post-content p {
+  margin: 0;
+}
+/*# sourceMappingURL=SmallPost.css.map */
