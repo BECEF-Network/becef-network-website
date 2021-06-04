@@ -14,7 +14,7 @@ const Homepage = () => {
         <Category1 />
       </div>
 
-      <div>
+      <div className="container">
         <Category2 />
       </div>
     </>
