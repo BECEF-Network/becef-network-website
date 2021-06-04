@@ -8,12 +8,12 @@ import Category3 from "./Category3/Category3";
 const Homepage = () => {
   return (
     <>
-      <div className="home">
+      {/* <div className="home">
         <div className="container">
           <HomeSlider />
         </div>
         <Category1 />
-      </div>
+      </div> */}
 
       <Category3 />
       

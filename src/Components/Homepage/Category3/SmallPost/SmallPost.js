@@ -3,7 +3,7 @@ import './SmallPost.css'
 
 function Small() {
     return (
-        <div className="small-post">
+        <div className="small-post my-4 my-lg-0">
             <div className="category1">
 
                 <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
