@@ -43,7 +43,7 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  cursor: grab;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +72,20 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.swiper-button-prev,.swiper-button-next {
+  background-color: #282a67;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.swiper-button-prev:after,.swiper-button-next:after {
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+}
+.swiper-pagination-bullet{
+  background-color: white;
+}
 
 @media screen and (max-width:768px) {
   .Allslider .swiper-slide{
