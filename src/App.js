@@ -1,22 +1,17 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Homepage from "./Components/Homepage/Homepage";
 import Header from "./Components/Header/Header";
-import Slider2 from "./Components/Slider2/Slider2";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-
-// bootstrap link
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import Navbar from "./Components/Navbar/Navbar";
+import ContactPage from "./pages/Contact/Contactpage";
+import HomePage from "./pages/Homepage/Homepage";
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Slider2 />
-      <Homepage />
-      <Contact />
-      <Footer />
-    </>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
+    </Router>
   );
 }
