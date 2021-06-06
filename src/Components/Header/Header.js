@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {Link} from 'react-router-dom';
 
 // Import Fontawsome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -64,7 +65,11 @@ function Header() {
         <div className="nav-bottom">
           <ul className={nav ? "active" : ""}>
             <li>
-              <a href="/">Home</a>
+              <a>
+                <Link to="/">
+                  Home
+                </Link>
+                </a>
             </li>
             <li>
               <a href="/">Article</a>
@@ -82,7 +87,11 @@ function Header() {
               <a href="/">community</a>
             </li>
             <li>
-              <a href="/">about</a>
+              <a href="/">
+                <Link to='/about'>
+                  about
+                </Link>
+                </a>
             </li>
           </ul>
         </div>

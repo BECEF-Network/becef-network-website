@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import ContactPage from "./pages/Contact/Contactpage";
 import HomePage from "./pages/Homepage/Homepage";
+import Aboutus from './Components/aboutus/Aboutus';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/about" component={Aboutus}/>
       </Switch>
     </Router>
   );
