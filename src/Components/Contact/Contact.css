@@ -1,7 +1,8 @@
+/* form input item style start here */
 .contact {
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
@@ -73,15 +74,29 @@
 }
 .labelFocus {
   position: absolute;
-  left: -40px;
-  top: -30%;
+  left: 0;
+  top: -34%;
   text-transform: uppercase;
   background-color: #191e3b;
-  padding: 5px;
+  padding: 3px;
   color: white;
   border-radius: 5px;
   font-size: 0.8rem;
-  transition: all 300ms;
+  transition: all 400ms;
+  opacity: 1;
+}
+
+.labelFocusMsg {
+  position: absolute;
+  left: 4%;
+  top: -27%;
+  text-transform: uppercase;
+  background-color: #191e3b;
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: all 400ms;
   opacity: 1;
 }
 
@@ -94,11 +109,10 @@
 }
 #name {
   height: 50px;
-  width: 400px;
-  border: none;
-  border-bottom: 2px solid black;
+  width: 380px;
+  padding: 15px;
+  border: 1px solid black;
   background-color: inherit;
-  outline: none;
 }
 
 .right-side {
@@ -107,7 +121,7 @@
 #textarea {
   width: 100%;
   height: 100px;
-  padding: 5px;
+  padding: 15px;
   background-color: inherit;
   outline: none;
 }
@@ -125,8 +139,112 @@
   border-radius: 5px;
   margin-bottom: 22px;
 }
+/* form input item style ends here  */
 
-@media only screen and (max-width: 700px) {
+/* card items style start here */
+.background {
+  margin-bottom: 30px;
+}
+
+.emails {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  padding-left: 70px;
+  padding-top: 40px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cardHead {
+  font-size: 25px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+}
+.cardHead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 45%;
+  background-color: black;
+}
+
+.details {
+  padding-top: 20px;
+}
+
+.details a {
+  text-decoration: none;
+  color: black;
+}
+.details a:hover {
+  color: #37469b;
+}
+.icons {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-top: 40px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+.social {
+  padding-top: 20px;
+}
+.page {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-top: 40px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+.zoom {
+  transition: all 0.3s;
+}
+.zoom:hover {
+  transform: scale(1.06);
+  transition: all 0.2s;
+}
+/* card items style ends here */
+
+/* form input item style for tablet start here */
+@media only screen and (max-width: 1050px) {
+  #name {
+    height: 50px;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: inherit;
+  }
+  .label-msg {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    text-transform: uppercase;
+  }
+
+  .labelFocusMsg {
+    position: absolute;
+    left: 2%;
+    top: -27%;
+    text-transform: uppercase;
+    background-color: #191e3b;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: all 400ms;
+    opacity: 1;
+  }
+}
+/* form input item style for tablet ends here */
+
+/* form input item style for mobile device start here */
+@media only screen and (max-width: 768px) {
   .title {
     text-align: center;
     font-size: 30px;
@@ -183,14 +301,14 @@
   } */
   #name {
     height: 50px;
-    width: 280px;
-    border: none;
-    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
     background-color: inherit;
     outline: none;
   }
   .right-side {
-    float: left;
+    float: none;
   }
   .submit-btn button {
     width: 120px;
@@ -205,38 +323,35 @@
   #textarea {
     width: 100%;
     height: 100px;
-    padding: 5px;
+    padding: 15px;
     background-color: inherit;
     outline: none;
   }
   .labelFocus {
     position: absolute;
-    left: -25px;
-    top: -30%;
+    left: 0;
+    top: -34%;
     text-transform: uppercase;
     background-color: #191e3b;
-    padding: 5px;
+    padding: 3px;
     color: white;
     border-radius: 5px;
     font-size: 0.8rem;
     transition: all 300ms;
     opacity: 1;
   }
-}
-
-@media only screen and (max-width: 968px) {
-  #name {
-    height: 50px;
-    width: 260px;
-    border: none;
-    border-bottom: 2px solid black;
-    background-color: inherit;
-    outline: none;
-  }
-  .label-msg {
+  .labelFocusMsg {
     position: absolute;
-    left: 5%;
-    top: 15%;
+    left: 4%;
+    top: -27%;
     text-transform: uppercase;
+    background-color: #191e3b;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: all 400ms;
+    opacity: 1;
   }
 }
+/* form input item style for mobile device ends here */
