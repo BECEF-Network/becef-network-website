@@ -70,7 +70,7 @@ export default function Contact() {
         <div className="contact">
           <div className="circle"></div>
           <div className="form">
-            <div className="title">
+            <div className="titleContact">
               <p>get in touch with us</p>
             </div>
 
