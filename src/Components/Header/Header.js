@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {Link} from 'react-router-dom';
 
 // Import Fontawsome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 function Header() {
+
+
   const [toggle, setToggle] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -16,32 +20,45 @@ function Header() {
     setNav(!nav);
   };
 
+  const [search, setSearch] = useState(false);
+
+  const searchClick = () => {
+    setSearch(!search);
+    // setNav(!nav);
+  };
+
   let day = new Date().toDateString();
   const [nDay, setNDay] = useState(day);
 
-  let time = new Date().toLocaleTimeString();
-  const [nDate, setNDate] = useState(time);
+  let time = new Date().toTimeString();
+  const [nTime, setNTime] = useState(time);
 
-  const date = () => {
-    time = setNDate(new Date().toLocaleTimeString());
+  const cTime = () => {
+    time = setNTime(new Date().toLocaleTimeString());
   };
-  setInterval(date, 1000);
+  setInterval(cTime, 1000);
 
   return (
     <header>
       <div className="container">
         <div className="nav-top">
           <div className="nav-top-icon">
-            {/* <FontAwesomeIcon className="toggle" icon={faBars} /> */}
+            <a href="" className="nav-lang-btn">
+              বাংলা
+            </a>
             <div
               onClick={toggleClick}
               className={toggle ? "toggle active" : "toggle"}
             ></div>
-            <FontAwesomeIcon className="search" icon={faSearch} />
+            <FontAwesomeIcon onClick={searchClick} className="search" icon={faSearch} />
+            <form className={search?"active search-field":"search-field"} action="#">
+              <input type="text" placeholder="Type to search..." required />
+              <button type="submit"><FontAwesomeIcon className="search" icon={faArrowRight} /></button>
+            </form>
           </div>
           <div className="nav-top-date">
             <p>
-              {day} | {nDate}{" "}
+              {nDay} | {nTime}
             </p>
           </div>
 
@@ -64,7 +81,9 @@ function Header() {
         <div className="nav-bottom">
           <ul className={nav ? "active" : ""}>
             <li>
-              <a href="/">Home</a>
+                <Link to="/">
+                  Home
+                </Link>
             </li>
             <li>
               <a href="/">Article</a>
@@ -82,7 +101,9 @@ function Header() {
               <a href="/">community</a>
             </li>
             <li>
-              <a href="/">about</a>
+                <Link to='/about'>
+                  about
+                </Link>
             </li>
           </ul>
         </div>
