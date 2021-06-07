@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 import ReactPlayer from "react-player";
+import Footer from "../Footer/Footer";
+
 
 const Aboutus = () => {
   return (
@@ -15,7 +17,7 @@ const Aboutus = () => {
           </div>
           <br />
           <div className=" col-sm-2 col-md-9 col-lg-12 ">
-            <p className=" ms-5 fs-6 w-10">
+            <p className=" ms-4 fs-6 w-10">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
               laboriosam similique, tenetur est voluptatem explicabo doloremque
               ipsa consectetur exercitationem id impedit! Vitae odio nisi natus
@@ -49,7 +51,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="col">
-        <p className="ms-5">
+        <p className="ms-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit ad
           iste asperiores possimus voluptatem tenetur expedita molestias
           provident, illo a nihil at inventore, ut dolorum sequi error corrupti
