@@ -1,8 +1,6 @@
 import React from "react";
 import "./About.css";
 import ReactPlayer from "react-player";
-import Footer from "../Footer/Footer";
-
 
 const Aboutus = () => {
   return (
@@ -51,7 +49,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="col">
-        <p className="ms-4">
+        <p className="ms-4 fs-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit ad
           iste asperiores possimus voluptatem tenetur expedita molestias
           provident, illo a nihil at inventore, ut dolorum sequi error corrupti
