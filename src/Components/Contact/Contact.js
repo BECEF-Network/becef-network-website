@@ -109,7 +109,8 @@ export default function Contact() {
                     onBlur={state.fullName == "" ? handleBlurFullName : null}
                     onChange={handleChnage}
                     value={state.fullName}
-                    placeholder={state.fullNameToggle === "" ? "FULL NAME" : ""}
+                    // placeholder={state.fullNameToggle === "" ? "FULL NAME" : ""}
+                    placeholder="FULL NAME"
                     className="mb-4 "
                   />
                   <label

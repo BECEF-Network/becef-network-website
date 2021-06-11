@@ -67,8 +67,9 @@
 
 .label {
   position: absolute;
-  left: 0;
-  top: 20%;
+  left: 40px;
+  top: 30px;
+  font-size: 1px;
   text-transform: uppercase;
   transition: all 300ms;
   opacity: 0;
