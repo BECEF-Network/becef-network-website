@@ -5,6 +5,7 @@ import ContactPage from "./pages/Contact/Contactpage";
 import HomePage from "./pages/Homepage/Homepage";
 import Aboutus from "./Components/aboutus/Aboutus";
 import Footer from "./Components/Footer/Footer";
+import CommunityPage from "./pages/CommunityPage/CommunityPage";
 // import JoinUs from "./Components/JoinUS/JoinUs";
 
 export default function App() {
@@ -15,8 +16,8 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/about" component={Aboutus} />
+        <Route path="/community" component={CommunityPage} />
       </Switch>
-
       <Footer />
     </Router>
   );

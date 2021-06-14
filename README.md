@@ -2,7 +2,7 @@
 ## Official Website
 
 
-> **Istall first node modules**
+> **Install first node modules**
 
      npm install
 
