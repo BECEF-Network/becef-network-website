@@ -1,11 +1,11 @@
 import Contact from "../../Components/Contact/Contact";
-import Footer from "../../Components/Footer/Footer";
+import SubHeader from "../../Components/Sub Header/SubHeader";
 
 export default function ContactPage() {
   return (
     <>
+      <SubHeader/>
       <Contact />
-      <Footer />
     </>
   );
 }

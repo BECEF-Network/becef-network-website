@@ -170,27 +170,12 @@ header .nav-top .nav-top-icon .search {
   border: none;
   outline: none;
   /* border: 1px solid lightgray; */
-  border: 1px solid rgba(211, 211, 211, 0);
+  border: 1px solid gray;
   padding: 5px 40px 5px 10px;
   border-radius: 50px;
   width: 100%;
-  animation: border 2s infinite ease-in;
-  animation-direction: alternate;
 }
-@keyframes border {
-  0%{
-    border-top: 1px solid rgb(66, 165, 127);
-  }
-  50%{
-    border-right: 1px solid rgb(37, 42, 53);
-  }
-  75%{
-    border-bottom: 1px solid rgb(25, 108, 185);
-  }
-  100%{
-    border-left: 1px solid rgb(134, 16, 202);
-  }
-}
+
 
 @media screen and (max-width: 768px) {
   header .nav-top .nav-top-icon .search {
