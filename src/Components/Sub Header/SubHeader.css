@@ -1,0 +1,31 @@
+.sub-header {
+  width: 100%;
+  text-align: center;
+  background: white;
+  -webkit-box-shadow: 0 5px 10px #0000001a;
+          box-shadow: 0 5px 10px #0000001a;
+  padding-bottom: 10px;
+}
+
+.sub-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.425);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.sub-header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 18px;
+  font-size: 18px;
+  display: inline-block;
+}
+/*# sourceMappingURL=SubHeader.css.map */
