@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Import Fontawsome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,8 +10,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 function Header() {
-
-
   const [toggle, setToggle] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -50,10 +48,19 @@ function Header() {
               onClick={toggleClick}
               className={toggle ? "toggle active" : "toggle"}
             ></div>
-            <FontAwesomeIcon onClick={searchClick} className="search" icon={faSearch} />
-            <form className={search?"active search-field":"search-field"} action="#">
+            <FontAwesomeIcon
+              onClick={searchClick}
+              className="search"
+              icon={faSearch}
+            />
+            <form
+              className={search ? "active search-field" : "search-field"}
+              action="#"
+            >
               <input type="text" placeholder="Type to search..." required />
-              <button type="submit"><FontAwesomeIcon className="search" icon={faArrowRight} /></button>
+              <button type="submit">
+                <FontAwesomeIcon className="search" icon={faArrowRight} />
+              </button>
             </form>
           </div>
           <div className="nav-top-date">
@@ -81,9 +88,7 @@ function Header() {
         <div className="nav-bottom">
           <ul className={nav ? "active" : ""}>
             <li>
-                <Link to="/">
-                  Home
-                </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a href="/">Article</a>
@@ -98,12 +103,10 @@ function Header() {
               <a href="/">news</a>
             </li>
             <li>
-              <a href="/">community</a>
+              <Link to="/community">community</Link>
             </li>
             <li>
-                <Link to='/about'>
-                  about
-                </Link>
+              <Link to="/about">about</Link>
             </li>
           </ul>
         </div>

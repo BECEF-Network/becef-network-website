@@ -45,14 +45,38 @@ export default function Contact() {
     }
   };
 
-  const handleBlur = (e) => {
+  const handleBlurLastName = (e) => {
+    setState(() => ({
+      ...state,
+      lastNameToggle: "",
+    }));
+  };
+
+  const handleBlurEmail = (e) => {
+    setState(() => ({
+      ...state,
+      emailToggle: "",
+    }));
+  };
+
+  const handleBlurSubject = (e) => {
+    setState(() => ({
+      ...state,
+      subjectToggle: "",
+    }));
+  };
+
+  const handleBlurMessage = (e) => {
+    setState(() => ({
+      ...state,
+      messageToggle: "",
+    }));
+  };
+
+  const handleBlurFullName = (e) => {
     setState(() => ({
       ...state,
       fullNameToggle: "",
-      lastNameToggle: "",
-      emailToggle: "",
-      subjectToggle: "",
-      messageToggle: "",
     }));
   };
 
@@ -70,7 +94,7 @@ export default function Contact() {
         <div className="contact">
           <div className="circle"></div>
           <div className="form">
-            <div className="title">
+            <div className="titleContact">
               <p>get in touch with us</p>
             </div>
 
@@ -82,7 +106,7 @@ export default function Contact() {
                     name="fullName"
                     type="text"
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={state.fullName == "" ? handleBlurFullName : null}
                     onChange={handleChnage}
                     value={state.fullName}
                     placeholder={state.fullNameToggle === "" ? "FULL NAME" : ""}
@@ -103,7 +127,7 @@ export default function Contact() {
                 <div className="input-item">
                   <input
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={state.lastName == "" ? handleBlurLastName : null}
                     onChange={handleChnage}
                     value={state.lastName}
                     id="name"
@@ -128,7 +152,7 @@ export default function Contact() {
                 <div className="input-item right-side">
                   <input
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={state.email == "" ? handleBlurEmail : null}
                     onChange={handleChnage}
                     value={state.email}
                     id="name"
@@ -150,7 +174,7 @@ export default function Contact() {
                 <div className="input-item right-side">
                   <input
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={state.subject == "" ? handleBlurSubject : null}
                     onChange={handleChnage}
                     value={state.subject}
                     id="name"
@@ -175,7 +199,7 @@ export default function Contact() {
               <div className="input-item">
                 <textarea
                   onFocus={handleFocus}
-                  onBlur={handleBlur}
+                  onBlur={state.message == "" ? handleBlurMessage : null}
                   onChange={handleChnage}
                   value={state.message}
                   name="message"

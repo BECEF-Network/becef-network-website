@@ -40,12 +40,13 @@
   opacity: 0.1;
 }
 
-.title {
+.titleContact {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
-  height: 60px;
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
 
 .input-one {
@@ -66,36 +67,39 @@
 
 .label {
   position: absolute;
-  left: 0;
-  top: 20%;
+  left: 40px;
+  top: 30px;
+  font-size: 1px;
   text-transform: uppercase;
   transition: all 300ms;
   opacity: 0;
 }
 .labelFocus {
   position: absolute;
-  left: 0;
-  top: -34%;
+  left: 2%;
+  top: -15%;
+  border-radius: 10px;
+  font-size: 0.7rem;
   text-transform: uppercase;
   background-color: #191e3b;
   padding: 3px;
   color: white;
-  border-radius: 5px;
-  font-size: 0.8rem;
+
   transition: all 400ms;
   opacity: 1;
 }
 
 .labelFocusMsg {
   position: absolute;
-  left: 1.2%;
-  top: -27%;
+  left: 2.5%;
+  top: -10%;
+  border-radius: 10px;
+  font-size: 0.7rem;
   text-transform: uppercase;
   background-color: #191e3b;
   padding: 3px;
   color: white;
-  border-radius: 5px;
-  font-size: 0.8rem;
+
   transition: all 400ms;
   opacity: 1;
 }
@@ -220,23 +224,18 @@
     border: 1px solid black;
     background-color: inherit;
   }
-  .label-msg {
-    position: absolute;
-    left: 5%;
-    top: 15%;
-    text-transform: uppercase;
-  }
 
   .labelFocusMsg {
     position: absolute;
-    left: 2%;
-    top: -27%;
+    left: 3.5%;
+    top: -10%;
+    border-radius: 10px;
+    font-size: 0.7rem;
     text-transform: uppercase;
     background-color: #191e3b;
     padding: 3px;
     color: white;
-    border-radius: 5px;
-    font-size: 0.8rem;
+
     transition: all 400ms;
     opacity: 1;
   }
@@ -329,27 +328,29 @@
   }
   .labelFocus {
     position: absolute;
-    left: 0;
-    top: -34%;
+    left: 4%;
+    top: -15%;
+    border-radius: 10px;
+    font-size: 0.7rem;
     text-transform: uppercase;
     background-color: #191e3b;
     padding: 3px;
     color: white;
-    border-radius: 5px;
-    font-size: 0.8rem;
+
     transition: all 300ms;
     opacity: 1;
   }
   .labelFocusMsg {
     position: absolute;
-    left: 4%;
-    top: -27%;
+    left: 8%;
+    top: -10%;
+    border-radius: 10px;
+    font-size: 0.7rem;
     text-transform: uppercase;
     background-color: #191e3b;
     padding: 3px;
     color: white;
-    border-radius: 5px;
-    font-size: 0.8rem;
+
     transition: all 400ms;
     opacity: 1;
   }
