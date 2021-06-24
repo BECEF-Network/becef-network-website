@@ -6,6 +6,7 @@ import HomePage from "./pages/Homepage/Homepage";
 import Aboutus from "./Components/aboutus/Aboutus";
 import Footer from "./Components/Footer/Footer";
 import CommunityPage from "./pages/CommunityPage/CommunityPage";
+import Video from "./pages/Video/Video";
 // import JoinUs from "./Components/JoinUS/JoinUs";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/contact" component={ContactPage} />
         <Route path="/about" component={Aboutus} />
         <Route path="/community" component={CommunityPage} />
+        <Route path="/videos" component={Video} />
       </Switch>
       <Footer />
     </Router>

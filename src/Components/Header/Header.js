@@ -97,7 +97,7 @@ function Header() {
               <a href="/">literature</a>
             </li>
             <li>
-              <a href="/">videos</a>
+              <Link to="/videos">videos</Link>
             </li>
             <li>
               <a href="/">news</a>
