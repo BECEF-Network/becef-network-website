@@ -9,17 +9,17 @@ import { faPlayCircle } from '@fortawesome/free-regular-svg-icons'
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
-import "swiper/components/effect-coverflow/effect-coverflow.min.css"
 import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/effect-coverflow/effect-coverflow.min.css"
 
 
 // import Swiper core and required modules
 import SwiperCore, {
-  Autoplay,EffectCoverflow,Pagination
+  Autoplay,Pagination,EffectCoverflow
 } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([Autoplay,EffectCoverflow,Pagination]);
+SwiperCore.use([Autoplay,Pagination,EffectCoverflow]);
 
 
 export default function SliderVideo({videos}) {
@@ -27,16 +27,18 @@ export default function SliderVideo({videos}) {
   return (
     <div className="container">
         <hr/>
-        <Swiper loop={true} spaceBetween={30} effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
+        <Swiper loop={true} spaceBetween={30} effect={'coverflow'} coverflowEffect={{
         "rotate": 40,
         "stretch": 0,
         "depth": 0,
         "modifier": 1,
         "slideShadows": true
-      }} autoplay={{
+      }} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} autoplay={{
         "delay": 5000,
         "disableOnInteraction": false
-      }} pagination={true} className="mySwiper slider-video">
+      }} pagination={{
+        "clickable": true
+        }} className="mySwiper slider-video">
                     {
                       videos.slice(9,15).map((video)=>{
                           return <SwiperSlide>
