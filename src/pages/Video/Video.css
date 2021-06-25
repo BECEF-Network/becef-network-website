@@ -117,35 +117,24 @@
   z-index: 99;
 }
 
-.video_section .swiper-container {
-  height: 400px;
-  margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.video_section .swiper-container.slider-video {
+  width: 100% !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 
-.video_section .swiper-container .swiper-pagination-bullet {
+.video_section .swiper-container.slider-video .swiper-pagination-bullet {
   background-color: black !important;
 }
 
-.video_section .swiper-container .swiper-wrapper {
-  height: 80%;
-  background: gray;
+.video_section .swiper-container.slider-video .swiper-wrapper .swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px !important;
+  height: 300px !important;
 }
 
-.video_section .swiper-container .swiper-wrapper .swiper-slide {
-  height: 100%;
-  border-radius: 5px;
-}
-
-.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post {
+.video_section .swiper-container.slider-video .swiper-wrapper .swiper-slide .slider_video_post {
   background-size: cover !important;
   height: 100% !important;
   display: -webkit-box;
@@ -154,9 +143,10 @@
   padding: 0 0 10px 10px;
   display: flex;
   border-radius: 5px;
+  padding: 0 0 10px 10px;
 }
 
-.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post span.playIcon {
+.video_section .swiper-container.slider-video .swiper-wrapper .swiper-slide .slider_video_post span.playIcon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,12 +154,13 @@
           transform: translate(-50%, -50%);
   color: white;
   font-size: 2.4rem;
+  z-index: 99;
 }
 
-.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post h5 {
+.video_section .swiper-container.slider-video .swiper-wrapper .swiper-slide .slider_video_post h5 {
   color: white;
   margin-top: auto;
-  padding: 0 0 10px 10px;
+  z-index: 9;
 }
 
 .video_section .small_video_post2 {
