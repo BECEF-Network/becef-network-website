@@ -105,4 +105,90 @@
         }
     }
     
+    .swiper-container{
+        height: 400px;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            .swiper-pagination-bullet {
+                background-color: black !important;
+            }
+
+        .swiper-wrapper{
+            height: 80%;
+            background:gray;
+
+            .swiper-slide{
+                height: 100%;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                border-radius: 5px;
+
+                .slider_video_post{
+                    background-size: cover !important;
+                    height: 100% !important;
+                    display: flex;
+                    padding: 0 0 10px 10px;
+                    display: flex;
+                    border-radius: 5px;
+
+                    span.playIcon {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        color: white;
+                        font-size: 2.4rem;
+                    }
+
+                    h5{
+                        color: white;
+                        margin-top: auto;
+                        padding: 0 0 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .small_video_post2{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .thumb-img{
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+
+            &:before{
+                content: "" !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0,0,0,.5);
+            }
+
+            img{
+                object-fit: cover;
+            }
+            
+            span.playIcon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                font-size: 2.4rem;
+                z-index: 9;
+            }
+        }
+    }
 }

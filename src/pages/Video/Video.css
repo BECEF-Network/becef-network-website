@@ -116,4 +116,108 @@
   font-size: 2.4rem;
   z-index: 99;
 }
+
+.video_section .swiper-container {
+  height: 400px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_section .swiper-container .swiper-pagination-bullet {
+  background-color: black !important;
+}
+
+.video_section .swiper-container .swiper-wrapper {
+  height: 80%;
+  background: gray;
+}
+
+.video_section .swiper-container .swiper-wrapper .swiper-slide {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post {
+  background-size: cover !important;
+  height: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 10px 10px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post span.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.4rem;
+}
+
+.video_section .swiper-container .swiper-wrapper .swiper-slide .slider_video_post h5 {
+  color: white;
+  margin-top: auto;
+  padding: 0 0 10px 10px;
+}
+
+.video_section .small_video_post2 {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_section .small_video_post2 .thumb-img {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.video_section .small_video_post2 .thumb-img:before {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.video_section .small_video_post2 .thumb-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video_section .small_video_post2 .thumb-img span.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.4rem;
+  z-index: 9;
+}
 /*# sourceMappingURL=Video.css.map */
