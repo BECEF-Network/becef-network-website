@@ -15,11 +15,11 @@ import "swiper/components/pagination/pagination.min.css"
 
 // import Swiper core and required modules
 import SwiperCore, {
-  EffectCoverflow,Pagination
+  Autoplay,EffectCoverflow,Pagination
 } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([EffectCoverflow,Pagination]);
+SwiperCore.use([Autoplay,EffectCoverflow,Pagination]);
 
 
 export default function SliderVideo({videos}) {
@@ -33,6 +33,9 @@ export default function SliderVideo({videos}) {
         "depth": 0,
         "modifier": 1,
         "slideShadows": true
+      }} autoplay={{
+        "delay": 5000,
+        "disableOnInteraction": false
       }} pagination={true} className="mySwiper slider-video">
                     {
                       videos.slice(9,15).map((video)=>{
