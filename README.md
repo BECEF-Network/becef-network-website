@@ -5,7 +5,3 @@
 > **Install first node modules**
 
      npm install
-
-## Hi
-
-     Hello world
