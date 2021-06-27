@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
 // Import Fontawsome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

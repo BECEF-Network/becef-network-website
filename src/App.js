@@ -7,7 +7,7 @@ import Aboutus from "./Components/aboutus/Aboutus";
 import Footer from "./Components/Footer/Footer";
 import CommunityPage from "./pages/CommunityPage/CommunityPage";
 import Video from "./pages/Video/Video";
-// import JoinUs from "./Components/JoinUS/JoinUs";
+import NotFound from "./Components/notFound/notFound";
 
 export default function App() {
   return (
@@ -19,6 +19,7 @@ export default function App() {
         <Route path="/about" component={Aboutus} />
         <Route path="/community" component={CommunityPage} />
         <Route path="/videos" component={Video} />
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer />
     </Router>

@@ -106,7 +106,7 @@ export default function Contact() {
                     name="fullName"
                     type="text"
                     onFocus={handleFocus}
-                    onBlur={state.fullName == "" ? handleBlurFullName : null}
+                    onBlur={state.fullName === "" ? handleBlurFullName : null}
                     onChange={handleChnage}
                     value={state.fullName}
                     placeholder={state.fullNameToggle === "" ? "FULL NAME" : ""}
@@ -127,7 +127,7 @@ export default function Contact() {
                 <div className="input-item">
                   <input
                     onFocus={handleFocus}
-                    onBlur={state.lastName == "" ? handleBlurLastName : null}
+                    onBlur={state.lastName === "" ? handleBlurLastName : null}
                     onChange={handleChnage}
                     value={state.lastName}
                     id="name"
@@ -152,7 +152,7 @@ export default function Contact() {
                 <div className="input-item right-side">
                   <input
                     onFocus={handleFocus}
-                    onBlur={state.email == "" ? handleBlurEmail : null}
+                    onBlur={state.email === "" ? handleBlurEmail : null}
                     onChange={handleChnage}
                     value={state.email}
                     id="name"
@@ -174,7 +174,7 @@ export default function Contact() {
                 <div className="input-item right-side">
                   <input
                     onFocus={handleFocus}
-                    onBlur={state.subject == "" ? handleBlurSubject : null}
+                    onBlur={state.subject === "" ? handleBlurSubject : null}
                     onChange={handleChnage}
                     value={state.subject}
                     id="name"
@@ -199,7 +199,7 @@ export default function Contact() {
               <div className="input-item">
                 <textarea
                   onFocus={handleFocus}
-                  onBlur={state.message == "" ? handleBlurMessage : null}
+                  onBlur={state.message === "" ? handleBlurMessage : null}
                   onChange={handleChnage}
                   value={state.message}
                   name="message"
@@ -253,7 +253,7 @@ export default function Contact() {
               <div className="cardHead">get social</div>
               <div className="row social">
                 <div className="col-4">
-                  <a href="#">
+                  <a href="/">
                     <svg
                       width="65"
                       height="67"
@@ -270,7 +270,7 @@ export default function Contact() {
                   </a>
                 </div>
                 <div className="col-4">
-                  <a href="#">
+                  <a href="/">
                     <svg
                       width="63"
                       height="63"
@@ -300,7 +300,7 @@ export default function Contact() {
                   </a>
                 </div>
                 <div className="col-4">
-                  <a href="#">
+                  <a href="/">
                     <svg
                       width="70"
                       height="70"
@@ -328,6 +328,7 @@ export default function Contact() {
                 scrolling="no"
                 frameborder="0"
                 allowfullscreen="true"
+                title="video"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               ></iframe>
             </div>

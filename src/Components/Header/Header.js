@@ -26,7 +26,7 @@ function Header() {
   };
 
   let day = new Date().toDateString();
-  const [nDay, setNDay] = useState(day);
+  const [nDay] = useState(day);
 
   let time = new Date().toTimeString();
   const [nTime, setNTime] = useState(time);
@@ -41,9 +41,9 @@ function Header() {
       <div className="container">
         <div className="nav-top">
           <div className="nav-top-icon">
-            <a href="" className="nav-lang-btn">
+            <Link to="/lang/bn" className="nav-lang-btn">
               বাংলা
-            </a>
+            </Link>
             <div
               onClick={toggleClick}
               className={toggle ? "toggle active" : "toggle"}
@@ -75,9 +75,9 @@ function Header() {
 
           <div className="nav-top-login">
             <FontAwesomeIcon className="nav-bell-icon" icon={faBell} />
-            <a href="/" className="nav-login-btn">
+            <Link to="/login" className="nav-login-btn">
               LOGIN
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -91,16 +91,16 @@ function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">Article</a>
+              <Link to="/article">Article</Link>
             </li>
             <li>
-              <a href="/">literature</a>
+              <Link to="/literature">Literature</Link>
             </li>
             <li>
-              <Link to="/videos">videos</Link>
+              <Link to="/videos">Videos</Link>
             </li>
             <li>
-              <a href="/">news</a>
+              <Link to="/news">News</Link>
             </li>
             <li>
               <Link to="/community">community</Link>
